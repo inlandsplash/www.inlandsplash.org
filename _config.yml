@@ -17,11 +17,11 @@ exclude:
 layouts: ./_noita
 
 noita:
-  name: Noita
+  name: InlandSplash
   description: Jekyll theme built with Foundation
   author:
-    name: Anatol Broder
-    url: http://penibelst.de/
+    name: RootAndFlow.com
+    url: http://www.rootandflow.com/
   lang: en
   favicons:
     - /assets/2014/04/21/favicon-152.png
