@@ -1,6 +1,7 @@
 ---
-title: "Welcome!"
-layout: post
+title: "Riverside Aquettes"
+layout: front-pin
+front-order: 2
 description: "Youth Performing Team for synchronized swimming competition."
 robots: none
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Our Partners"
-layout: post
+layout: front-pin
+front-order: 9
 description: "InlandSplash is grateful for the support of our community."
 robots: none
 ---

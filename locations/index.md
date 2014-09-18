@@ -1,6 +1,7 @@
 ---
 title: "Our Pools"
-layout: post
+layout: front-pin
+front-order: 5
 description: "Map of our locations in Riverside, CA"
 robots: none
 ---

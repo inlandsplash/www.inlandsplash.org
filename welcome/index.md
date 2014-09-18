@@ -1,6 +1,7 @@
 ---
 title: "Welcome!"
-layout: post
+layout: front-pin
+front-order: 1
 description: "Swimming Fun in Riverside, CA - 951-900-3058"
 robots: none
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Aqua Motion"
-layout: post
+layout: front-pin
+front-order: 3
 description: "Services for senior health."
 robots: none
 ---

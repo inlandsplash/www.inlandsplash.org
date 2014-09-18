@@ -1,6 +1,7 @@
 ---
 title: "Calendar"
-layout: post
+layout: front-pin
+front-order: 6
 description: "Scheduled events"
 robots: none
 ---

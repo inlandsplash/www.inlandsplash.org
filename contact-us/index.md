@@ -1,6 +1,7 @@
 ---
 title: "Contact Us"
-layout: post
+layout: front-pin
+front-order: 11
 description: "Questions about any of our programs and events? Just ask!"
 robots: none
 ---

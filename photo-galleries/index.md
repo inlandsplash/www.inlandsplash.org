@@ -1,6 +1,7 @@
 ---
 title: "Photo Gallery"
-layout: post
+layout: front-pin
+front-order: 8
 description: "See Riverside Aquettes in Action."
 robots: none
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Download Forms"
-layout: post
+layout: front-pin
+front-order: 10
 robots: none
 ---
 

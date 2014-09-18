@@ -1,6 +1,7 @@
 ---
 title: "About Us"
-layout: post
+layout: front-pin
+front-order: 4
 description: "InlandSplash Staff"
 robots: none
 ---
