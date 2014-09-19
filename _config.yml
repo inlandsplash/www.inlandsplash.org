@@ -28,7 +28,7 @@ noita:
   favicons:
     - /assets/2014/04/21/favicon-152.png
   stylesheets:
-    - /rootandflow/inlandsplash.css
+    - /is/inlandsplash.css
   topbar:
     toggle: Menu
     right:
