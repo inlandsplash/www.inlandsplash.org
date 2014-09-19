@@ -8,6 +8,8 @@ exclude:
   - Gemfile
   - Gruntfile.js
   - LICENSE
+  - NOITA-LICENSE
+  - index-old.html
   - node_modules/
   - package.json
   - Rakefile
