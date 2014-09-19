@@ -20,13 +20,15 @@ layouts: ./_noita
 
 noita:
   name: InlandSplash
-  description: Jekyll theme built with Foundation
+  description: Noita child theme for Jekyll built with Foundation
   author:
     name: RootAndFlow.com
     url: http://www.rootandflow.com/
   lang: en
   favicons:
     - /assets/2014/04/21/favicon-152.png
+  stylesheets:
+    - /rootandflow/inlandsplash.css
   topbar:
     toggle: Menu
     right:
