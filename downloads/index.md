@@ -5,9 +5,10 @@ front-order: 10
 robots: none
 ---
 
-<ul class="inline-list">
-<li>Aquettes Registration: <a href="http://www.inlandsplash.org/wp-content/uploads/2014/09/RAQ_Reg-Medical_History_Form.pdf">Medical History Form</a></li>
-<li>Aquettes Waiver: <a href="http://www.inlandsplash.org/wp-content/uploads/2014/09/Waiver_and_Release_of_Liability.pdf">Liability Release</a></li>
-<li>Water Aerobics Registration: <a href="http://www.inlandsplash.org/wp-content/uploads/2014/09/Shamel_Pre_exercise_form.docx">Pre-Exercise form</a></li>
-<li>Emergency Treatment: <a href="http://www.inlandsplash.org/wp-content/uploads/2014/09/Auth_treatment_form.pdf">Authorization form</a></li>
-</ul>
+Aquettes Registration and Medical History Form: [PDF]({{ site.url }}/downloads/RAQ_Reg-Medical_History_Form.pdf)
+
+Aquettes Waiver: [PDF]({{ site.url }}/downloads/Waiver_and_Release_of_Liability.pdf)
+
+Water Aerobics Registration: [Word Doc]({{ site.url }}/downloads/Shamel_Pre_exercise_form.docx)
+
+Emergency Treatment: [PDF]({{ site.url }}/downloads/Auth_treatment_form.pdf)

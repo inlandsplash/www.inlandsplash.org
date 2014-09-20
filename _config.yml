@@ -29,6 +29,7 @@ noita:
     - /assets/2014/04/21/favicon-152.png
   stylesheets:
     - /is/inlandsplash.css
+    - /is/two.css
   topbar:
     toggle: Menu
     right:
