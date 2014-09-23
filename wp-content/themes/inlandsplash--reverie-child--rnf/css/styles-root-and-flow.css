@@ -31,7 +31,7 @@
   text-transform:uppercase;
 }
 /* Typography  */
-h1,h2,h3,h4,h5,h6 {  
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Oswald', 'sans-serif';
   text-transform:uppercase;
 }
@@ -41,7 +41,7 @@ h2 {
 p,em,strong {
   font-family: 'Montserrat', 'sans-serif';
 }
-p,em {  
+p,em {
   font-weight:normal;
   color:#929293;
 }
@@ -58,10 +58,10 @@ strong {
  color:#45bfb9;
 }
 #map-legend-2 {
- color:#e17c00; 
+ color:#e17c00;
 }
 #map-legend-3 {
- color:#c0b800; 
+ color:#c0b800;
 }
 #map-legend ul li:nth-of-type(1) {
   text-transform:uppercase;
@@ -92,7 +92,7 @@ strong {
   color:#45C0BA;
 }
 .full-width.footer-widget p {
- color:#007DC3; 
+ color:#007DC3;
 }
 .footer-widget h4 {
   color:#000000;
@@ -157,6 +157,10 @@ body {
 }
 /* div section */
 #news-and-events {
+  padding:0rem 3.125rem 2rem;
+}
+/* div section */
+#downloads {
   padding:0rem 3.125rem 12rem;
 }
 .calendar {
@@ -177,12 +181,12 @@ body {
   bottom: 0;
   left: 0;
   z-index: 80;
-  text-align:center; 
+  text-align:center;
   background-repeat: repeat-x;
   background-image:url("../img/vector/waves-footer.svg");
   background-position:0 0;
-  color:#006699; 
-} 
+  color:#006699;
+}
 #fixed-footer h4 {
   margin:20px 0 4px;
 }
@@ -277,11 +281,11 @@ button.large, .button.large {
     height:58px;
     font-size:1.5rem;
   }
-  /* 
+  /*
   .top-bar-section ul li > a
    */
   .divider {
-    height:58px !important; 
+    height:58px !important;
     display:none;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
