@@ -3,6 +3,10 @@ permalink: /blog/:year/:title/
 relative_permalinks: true
 timezone: America/Los_Angeles
 
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
 exclude:
   - CNAME
   - Gemfile
