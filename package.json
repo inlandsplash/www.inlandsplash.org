@@ -1,0 +1,13 @@
+{
+  "author": "RootAndFlow.com",
+  "name": "InlandSplash.org",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "",
+    "grunt-html": ""
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
