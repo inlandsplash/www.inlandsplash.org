@@ -1,7 +1,9 @@
 {
-  "author": "RootAndFlow.com",
   "name": "InlandSplash.org",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "author": "RootAndFlow.com",
+  "description": "Jekyll theme built with Zurb Foundation 5 for Github Pages",
+  "private": true,
   "dependencies": {},
   "devDependencies": {
     "grunt": "",
