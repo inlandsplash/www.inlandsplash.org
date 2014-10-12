@@ -25,7 +25,7 @@ exclude:
   - vendor/
 
 sass:
-  sass_dir: bower_components/foundation/scss
+  sass_dir: _themes/bower_components/foundation/scss
 #  style: compressed
 
 markdown: kramdown
