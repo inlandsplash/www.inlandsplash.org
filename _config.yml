@@ -1,0 +1,88 @@
+safe: true
+# url: http://www.inlandsplash.org
+# baseurl: /staging
+lsi: false
+highlighter: pygments
+timezone: America/Los_Angeles
+
+layouts: ./_themes/inlandsplash/layouts
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+exclude:
+  - bower.json
+  - CNAME
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - Compression-by-Noita--license
+  - node_modules/
+  - package.json
+  - Rakefile
+  - README.md
+  - vendor/
+
+sass:
+  sass_dir: bower_components/foundation/scss
+#  style: compressed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+
+# Site Info
+name: InlandSplash.org
+description: "Swimming Fun for the Whole Family!"
+vcard:
+  email: "contact@inlandsplash.org"
+  fn: "Linda Hicks"
+  locality: "Riverside"
+  phone: "(951) 900-3058"
+  state: "CA"
+  street-address: "5461 Brockton Ave"
+  zip: "92506"
+
+# Theme Info
+inlandsplash:
+  name: InlandSplash
+  description: "Jekyll theme built with Zurb Foundation 5 responsive web framework." 
+  author:
+    name: "Remy Schrader"
+    company: "RootAndFlow.com"
+    url: "http://www.rootandflow.com"
+  generator: "Built for Jekyll and published on Github Pages."
+  lang: en
+  stylesheets:
+    - /_themes/inlandsplash/css/inlandsplash.css
+  favicons:
+    - /_themes/inlandsplash/css/img/favicon.png
+  topbar:
+    toggle: Menu
+    left:
+      - name: Aquettes
+        url: #aquettes
+      - name: Aqua Motion
+        url: #aqua-motion
+      - name: About Us
+        url: #about-us
+    right:
+      - name: Map
+        url: #location
+      - name: Calendar
+        url: #calendar
+      - name: News &#038; Events
+        url: #news-and-events
+
+# Sitewide Facebook Opengraph tags
+# Page specific tags can be set with "og:" in pagefile YAML Frontmatter
+og:
+  type: website
+  # Including an image in page/post Frontmatter will override sitewide image specified here.
+image: "_themes/inlandsplash/css/img/og-inlandsplash-logo.png"
+
+compress_html:
+  clippings: [html, head, title, base, link, meta, style, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address, p, hr, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div, table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th]
+  endings: [html, head, body, li, dt, dd, p, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
