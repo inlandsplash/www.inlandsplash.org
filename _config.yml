@@ -1,41 +1,59 @@
 safe: true
-# url: http://www.inlandsplash.org
+# url: http://www.inlandsplash.com
 # baseurl: /staging
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
-
-layouts: ./_themes/inlandsplash/layouts
-
-gems:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-
-exclude:
-  - bower.json
-  - CNAME
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - Compression-by-Noita--license
-  - node_modules/
-  - package.json
-  - Rakefile
-  - README.md
-  - vendor/
-
-sass:
-  sass_dir: _themes/bower_components/foundation/scss
-#  style: compressed
+permalink: /:categories/:year/:month/:title/ 
+# final trailing slash is optional here in config; will be appended to url address but not to {{ page.url }} liquid output 
 
 markdown: kramdown
-kramdown:
+kramdown: 
   input: GFM
   parse_block_html: true
 
+# Theme Info
+theme: &inland_splash
+  name: "Inland Splash"
+  description: "Jekyll theme built with Zurb Foundation 5 responsive framework."
+  author: 
+    name: "Remy Schrader"
+    email: "remy@rootandflow.com"
+    company: "RootAndFlow.com"
+    url: "http://www.rootandflow.com"
+  lang: en
+  fonts: "Open+Sans%3A300%2C400%2C600%2C700%7CLora%3A400%2C700%7CDroid+Sans+Mono%7COswald%3A400%2C700%7CMontserrat%3A400%2C700"
+  generator: "Built for Jekyll and published on Github Pages."
+  # Theme directory is located within longmans root under _includes 
+  dir: &longmans_d #Anchor for Jekyll asset mapping, referenced below in Front Matter defaults
+    bow: /_includes/longmans/bower_components
+    css: /_includes/longmans/inland_splash/css
+    img: /_includes/longmans/inland_splash/img
+    inc: /longmans/inland_splash/includes
+    lay: &longmans_lay /_includes/longmans/inland_splash/layouts # Anchor for Jekyll _layouts, referenced in Site Info and Exclude list.  
+  favicons:
+    - /favicon-172.png
+  javascripts:
+    bower:
+      - /foundation/js/vendor/jquery.js
+      - /FitText.js/jquery.fittext.js
+      - /foundation/js/vendor/fastclick.js
+      - /foundation/js/foundation.min.js
+  stylesheets: 
+    - /main.css
+
+# Longmans framework globals
+## Jekyll options
+layouts: *longmans_lay
+sass: 
+  sass_dir: _includes/longmans/bower_components/foundation/scss
+# style: compressed
+## Longmans specific
+longmans: *inland_splash
+
 # Site Info
 name: InlandSplash.org
-description: "Swimming Fun for the Whole Family!"
+description: &site_desc "Swimming Fun for the Whole Family!"
 vcard:
   email: "contact@inlandsplash.org"
   fn: "Linda Hicks"
@@ -45,44 +63,70 @@ vcard:
   street-address: "5461 Brockton Ave"
   zip: "92506"
 
-# Theme Info
-inlandsplash:
-  name: InlandSplash
-  description: "Jekyll theme built with Zurb Foundation 5 responsive web framework." 
-  author:
-    name: "Remy Schrader"
-    company: "RootAndFlow.com"
-    url: "http://www.rootandflow.com"
-  generator: "Built for Jekyll and published on Github Pages."
-  lang: en
-  stylesheets:
-    - /_themes/inlandsplash/css/inlandsplash.css
-  favicons:
-    - /_themes/inlandsplash/css/img/favicon.png
-  topbar:
-    toggle: Menu
-    left:
-      - name: Aquettes
-        url: #aquettes
-      - name: Aqua Motion
-        url: #aqua-motion
-      - name: About Us
-        url: #about-us
-    right:
-      - name: Map
-        url: #location
-      - name: Calendar
-        url: #calendar
-      - name: News &#038; Events
-        url: #news-and-events
+# FrontMatter defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      d: *longmans_d 
+  -
+    scope: &scope_all # Set scope to all pages in site
+      path: "" # an empty string here means all files in the project
+      type: "pages" # Available options are pages, posts, and drafts
+    values: &values_all 
+      layout: "page"
+      description: *site_desc
+      og: # Facebook Opengraph default tags
+        image: "/opengraph/inland-splash-logo.png"
+        type: "website"
+      topbar:
+        toggle: Menu
+        left:
+          - name: "Aquettes"
+            url: '#aquettes'
+          - name: "Aqua Motion" 
+            url: '#aqua-motion'
+          - name: "About Us" 
+            url: '#about-us'
+        right:
+          - name: "Map"
+            url: '#location'
+          - name: "Calendar"
+            url: '#calendar'
+          - name: "News &#038; Events"
+            url: '#news-and-events'
+          # set includes dir here with reference to anchor in longmans theme
+  -
+    scope: # Set scope to all site posts
+      <<: *scope_all
+      type: "posts"
+    values: 
+      <<: *values_all
+      layout: "post"
 
-# Sitewide Facebook Opengraph tags
-# Page specific tags can be set with "og:" in pagefile YAML Frontmatter
-og:
-  type: website
-  # Including an image in page/post Frontmatter will override sitewide image specified here.
-image: "_themes/inlandsplash/css/img/og-inlandsplash-logo.png"
+gems: 
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+exclude:
+  - bower.json
+  - CNAME
+  - Gemfile
+  - Gruntfile.js
+  - Compression-by-Noita--license
+  - LICENSE
+  - node_modules/
+  - package.json
+  - Rakefile
+  - README.md
+  - vendor/
+  - *longmans_lay
+
+include: 
+  - _includes
 
 compress_html:
   clippings: [html, head, title, base, link, meta, style, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address, p, hr, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div, table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th]
   endings: [html, head, body, li, dt, dd, p, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+

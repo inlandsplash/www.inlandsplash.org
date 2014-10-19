@@ -1,0 +1,4 @@
+{% assign front_pages = (site.pages | where: "layout" , "front-pin" | sort: 'front-order') %}
+{% for page in front_pages %}
+  {{ page.content }}
+{% endfor %}

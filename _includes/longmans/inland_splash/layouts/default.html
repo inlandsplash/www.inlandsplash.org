@@ -1,0 +1,26 @@
+---
+# layout: compress
+---
+<!doctype html>
+<html dir="ltr" lang="{{ site.inlandsplash.lang }}">
+  {% include inlandsplash/head.html %}
+  <body>
+    <div id="bg-highlight">
+      <div class="row">
+        <div class="small-12 column">
+          <div id="main-wrapper">
+          {% include inlandsplash/topbar.html %}
+            <div id="main">
+              {% include inlandsplash/header.html %}
+              <div id="main-content">
+                {{ content }}
+              </div>
+              {% include inlandsplash/footer.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% include inlandsplash/scripts.html %}
+  </body>
+</html>
