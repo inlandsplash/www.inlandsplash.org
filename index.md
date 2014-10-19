@@ -1,7 +1,8 @@
 ---
-layout: front
+layout: default
 title: InlandSplash.org
-description: "Swimming Fun in Riverside, CA - 951-900-3058"
+subtitle: "Youth Synchronized Swimming and Senior Water Aerobics Classes"
+description: "Swimming Fun in Riverside, CA (951) 900-3058"
 ---
 
-{% include noita/frontpage.html %}
+{% include frontpage.html %}
