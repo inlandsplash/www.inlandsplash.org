@@ -55,7 +55,9 @@ longmans: *inland_splash
 name: InlandSplash.org
 description: &site_desc "Swimming Fun for the Whole Family!"
 vcard:
-  email: "contact@inlandsplash.org"
+  email: 
+    address: "contact@inlandsplash.org"
+    display: "contact (at) inlandsplash.org"
   fn: "Linda Hicks"
   locality: "Riverside"
   phone: "(951) 900-3058"
