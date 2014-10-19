@@ -1,0 +1,15 @@
+<form method="POST" action="http://forms.brace.io/inlandsplash@remysaintjames.com">
+  <input type="hidden" name="_subject" value="InlandSplash.org - New contact form submission" />
+  <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/thank-you/" />
+<!--
+  <input type="hidden" name="_cc" value="antiquemermaids@att.net" />
+-->
+    <label for="InputName">Name</label>
+    <input name="name" type="name" class="form-control" id="InputName" placeholder="your name">
+    <label for="SenderEmail">Email address</label>
+    <input name="_replyto" type="email" class="form-control" id="SenderEmail" placeholder="you@email.com">
+    <label for="FormMessage">Some text</label>
+    <textarea name="message" class="form-control" id="FormMessage" rows="3" placeholder="Hello!"></textarea>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+</form>

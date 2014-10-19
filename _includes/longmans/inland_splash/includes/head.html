@@ -1,0 +1,26 @@
+<head>
+  {% include {{ page.d.inc }}/meta.html %}
+  <title>{{ site.name }}{% if page.title %} &#183; {{ page.title }}{% endif %}</title>
+  {% include {{ page.d.inc }}/robots.html %}
+  {% include {{ page.d.inc }}/opengraph.html %}
+
+  {% for favicon in site.longmans.favicons %}
+    {% assign size = favicon | split: '-' | last | split: '.' | first %}
+    <link rel="icon"
+      sizes="{{ size }}x{{ size }}"
+      href="{{ site.url }}{{ site.baseurl }}{{ page.d.img }}{{ favicon }}">
+    <link rel="apple-touch-icon"
+      sizes="{{ size }}x{{ size }}"
+      href="{{ site.url }}{{ site.baseurl }}{{ page.d.img }}{{ favicon }}">
+    {% endfor %}
+
+    <link rel="alternate" href="/blog/feed.atom"
+      title="{{ site.name }}" type="application/atom+xml">
+
+    {% for stylesheet in site.longmans.stylesheets %}
+      <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}{{ page.d.css }}{{ stylesheet }}">
+    {% endfor %}
+    <link rel="stylesheet" id='google-font-css' href='http://fonts.googleapis.com/css?family={{ site.longmans.fonts }}' type='text/css' media='all'>
+
+    <script src="{{ site.url }}{{ site.baseurl }}/bower_components/foundation/js/vendor/modernizr.js"></script>
+</head>
