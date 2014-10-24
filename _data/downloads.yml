@@ -1,0 +1,13 @@
+forms:
+  - title: "Aquettes Registration and Medical History Form"
+    type: "PDF"
+    file: "/RAQ_Reg-Medical_History_Form.pdf"
+  - title: "Aquettes Waiver"
+    type: "PDF"
+    file: "/Waiver_and_Release_of_Liability.pdf"
+  - title: "Water Aerobics Registration"
+    type: "MS Word"
+    file: "/Shamel_Pre_exercise_form.docx"
+  - title: "Emergency Treatment"
+    type: "PDF"
+    file: "/Auth_treatment_form.pdf"

@@ -4,13 +4,13 @@ safe: true
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
-permalink: /:categories/:year/:month/:title/ 
-# final trailing slash is optional here in config; will be appended to url address but not to {{ page.url }} liquid output 
+permalink: pretty 
 
 markdown: kramdown
 kramdown: 
   input: GFM
   parse_block_html: true
+  auto_ids: false
 
 # Theme Info
 theme: &inland_splash
@@ -28,6 +28,7 @@ theme: &inland_splash
   dir: &longmans_d #Anchor for Jekyll asset mapping, referenced below in Front Matter defaults
     bow: /_includes/longmans/bower_components
     css: /_includes/longmans/inland_splash/css
+    dwn: /_includes/longmans/inland_splash/downloads 
     img: /_includes/longmans/inland_splash/img
     inc: /longmans/inland_splash/includes
     lay: &longmans_lay /_includes/longmans/inland_splash/layouts # Anchor for Jekyll _layouts, referenced in Site Info and Exclude list.  
@@ -39,6 +40,8 @@ theme: &inland_splash
       - /FitText.js/jquery.fittext.js
       - /foundation/js/vendor/fastclick.js
       - /foundation/js/foundation.min.js
+    head: 
+      - /foundation/js/vendor/modernizr.js
   stylesheets: 
     - /main.css
 
@@ -47,7 +50,8 @@ theme: &inland_splash
 layouts: *longmans_lay
 sass: 
   sass_dir: _includes/longmans/bower_components/foundation/scss
-# style: compressed
+  style: :nested # for dev
+# style: :compressed # for prod
 ## Longmans specific
 longmans: *inland_splash
 
@@ -97,7 +101,7 @@ defaults:
           - name: "Calendar"
             url: '#calendar'
           - name: "News &#038; Events"
-            url: '#news-and-events'
+            url: '#news-events'
           # set includes dir here with reference to anchor in longmans theme
   -
     scope: # Set scope to all site posts

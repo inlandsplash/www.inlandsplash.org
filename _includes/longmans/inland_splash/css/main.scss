@@ -33,24 +33,30 @@
     #SETTINGS
 \*------------------------------------*/
 
+/* trace 1.begin
+ * @import "../../normalize-scss/normalize";
+ */
 @import "../../normalize-scss/normalize";
-@import "../../../the_hammar/css/foundation_settings";
+/* trace 1.end
+ * @import "../../normalize-scss/normalize";
+ */
+/* trace 2.begin
+ * @import "../../../inland_splash/css/settings";
+ */
+@import "../../../inland_splash/css/settings";
+/* trace 2.end
+ * @import "../../../inland_splash/css/settings";
+ */
+/* trace 3.begin
+ * @import "foundation";
+ */
 @import "foundation";
+/* trace 3.end
+ * @import "foundation";
+ */
 
 // Globals
 // Liquid Variables
-
-
-a:visited {
-    color: $success-color;
-  }
-a:active {
-  color: $alert-color;
-  }
-
-
-
-
 
 
 
@@ -59,224 +65,4 @@ a:active {
 /*------------------------------------*\
     #STYLES
 \*------------------------------------*/
-
-body {
-  background-image: url('{{ site.baseurl }}{{ page.d.img }}/scratch-patch.png');  
-  color: #4f4f4f;
-}
-#bg-highlight {
-     background-image: url('{{ site.baseurl }}{{ page.d.img }}/highlight.png');
-  background-position: center top;
-    background-repeat: no-repeat;
-}
-
-
-
-#main-wrapper {
-               margin: 1.2rem auto 2.4rem;
-                width: 94%;
-}
-
-#main {
-     background-color: #fff;
-           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-               margin: 0 auto;
-              padding: 1%;
-             position: relative;
-}
-
-#main-content {
-              padding: 0 4%;
-
-}
-
-
-
-#header {
-             position: relative;
-}
-
-#header-bg {
-     background-image: url('{{ site.baseurl }}{{ page.d.img }}/title-splash.jpg');
-      background-size: cover;
-  background-position: center; /* IE fix */
-                width: 100%;
-       padding-bottom: 50%;
-}
-#header-foot {
-     background-image: url('{{ site.baseurl }}{{ page.d.img }}/banner-shadow.png');
-  background-position: right top; 
-    background-repeat: repeat-x;
-               height: 40px;
-               margin: 1% auto;
-                width: 98%;
-}
-
-#header-tab {
-               bottom: 24%;
-     background-color: $info-color;
-           box-shadow: 0.5rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-                color: $white;
-                 left: -5%;
-              padding: 0 3%;
-             position: absolute;
-           text-align: center;
-}
-#header-tab:after {
-           background: linear-gradient(to left bottom, #215668 50%, transparent 50%);
-               bottom: -25%;
-              content: " ";
-               height: 25%;
-                 left: 0;
-             position: absolute;
-                width: 75%;
-              z-index: -1;
-}
-
-#header-subtab {
-     background-color: $alert-color;
-               bottom: 6%;
-           box-shadow: 0.5rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-                color: $white;
-                 left: -2%;
-              padding: 2% 4%;
-             position: absolute;
-           text-align: center;
-}
-#header-subtab:after {
-           background: linear-gradient(to left bottom, #712810 50%, transparent 50%);
-               bottom: -44%;
-              content: " ";
-               height: 45%;
-                 left: 0;
-             position: absolute;
-                width: 15%;
-              z-index: -1;
-}
-
-
-
-
-
-/* Media Queries for 
-Responsive styles */
-
-
-/* for Large screens 1025px wide and up */
-
-@media #{$large-up} {
-
-/** Header Ribbons 
- * font sizes 
- * positioning
- */
-
-  #header-tab {
-               bottom: 48%;
-                 left: -6%;
-              padding: 0 3%;
-            font-size: 6.854rem;
-  }
-  #header-subtab {
-               bottom: 16%;
-                 left: -4%;
-              padding: 2.5% 5%;
-            font-size: 1.618rem;
-  }
-
-}
-
-
-/* for Medium screens 641px wide and above */ 
-@media #{$medium-up} {
-
-/* Image styles */
-
-#headshot.right {
-               margin: 0.382rem 0.382rem 0.382rem 1.618rem;
-              padding: 0.236rem;
-}
-
-#headshot.left {
-               margin: 0.382rem 1.618rem 0.382rem 0.382rem;
-              padding: 0.236rem;
-}
-
-
-
-// Display inline elements hidden on small and mobile screens 
-  .inline-hide-for-small {
-              display: inline;
-  }
-
-}
-
-/* for Medium screens ONLY 641 - 1024px wide */
-@media #{$medium-only} {
-
-/** Header Ribbons 
- * font sizes 
- * positioning
- */
-
-  #header-tab {
-               bottom: 48%;
-                 left: -6%;
-              padding: 0 3%;
-            font-size: 4.5rem;
-  }
-  #header-subtab {
-               bottom: 16%;
-                 left: -4%;
-              padding: 2.5% 5%;
-            font-size: 1.45rem;
-  }
-
-}
-
-
-/* for Small/Mobile screens 640px wide and below */ 
-@media #{$small-only} {
-
-/** Header Ribbons 
- * font sizes 
- * positioning
- */
-
-  #header-tab {
-               bottom: 48%;
-                 left: -6%;
-              padding: 0 3%;
-            font-size: 2.618rem;
-  }
-  #header-subtab {
-               bottom: 28%;
-                 left: -4%;
-              padding: 2.5% 5%;
-            font-size: 0.618rem;
-  }
-
-/* Image styles */
-
-#headshot.right {
-               margin: 0.382rem auto;
-                clear: both;
-              padding: 0.236rem;
-                float: none !important;
-}
-
-#headshot.left {
-               margin: 0.382rem auto;
-                clear: both;
-              padding: 0.236rem;
-                float: none !important;
-}
-
-
-  // Hide inline elements displayed on medium screens and above 
-  .inline-hide-for-small {
-              display: none;
-  }
-
-}
 

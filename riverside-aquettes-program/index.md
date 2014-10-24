@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Riverside Aquettes Program"
 description: "About the Riverside Aquettes"
 ---
@@ -24,4 +23,3 @@ Swimmers are admitted to the competitive program in late summer or early fall as
 
 ### Masters Program
 Anyone over the age of 18 can join this fun group for $5 per session.  We learn all the basics of synchro and for those who are interested, we do a competition at the end of the year.  
-

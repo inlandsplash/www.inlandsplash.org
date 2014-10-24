@@ -1,0 +1,3 @@
+<p class="uppercase"><strong>Riverside Aquettes was founded in 1958 and became a non-profit corporation in 1966. We are one of the oldest synchronized swimming clubs in the United States.</strong></p>
+<p>Sue Nesbitt, our head coach, is an internationally renowned swim coach. Many of our girls have gone on to the Olympics. RAQ has been producing high-caliber and goal-oriented young people for may years. We use synchronized swimming to develop technical, physical and mental ability, integrating creative movement to music and working as a team member.</p>
+<a class="large button radius uppercase aquettes-action" target="_blank" href="http://www.raqsynchro.org/About-Us.html">More Info</a>

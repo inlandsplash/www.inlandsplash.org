@@ -21,6 +21,7 @@
       <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}{{ page.d.css }}{{ stylesheet }}">
     {% endfor %}
     <link rel="stylesheet" id='google-font-css' href='http://fonts.googleapis.com/css?family={{ site.longmans.fonts }}' type='text/css' media='all'>
-
-    <script src="{{ site.url }}{{ site.baseurl }}/bower_components/foundation/js/vendor/modernizr.js"></script>
+    {% for script in site.longmans.javascripts.head %}
+    <script src="{{ site.url }}{{ site.baseurl }}{{ page.d.bow }}{{ script }}"></script>
+    {% endfor %}
 </head>

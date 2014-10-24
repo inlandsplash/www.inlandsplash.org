@@ -1,0 +1,24 @@
+---
+# layout: compress
+---
+<!doctype html>
+<html dir="ltr" lang="{{ site.longmans.lang }}">
+  {% include {{ page.d.inc }}/head.html %}
+  <body>
+  {% include {{ page.d.inc }}/header.html %}
+  {% include {{ page.d.inc }}/single-topbar.html %}
+    <div class="main-wrapper">
+      <div class="row">
+        <div class="small-12 column">
+          <div class="main">
+            <!-- Top-bar Home link Nav landing -->
+            <div class="top-nav-landing"></div>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% include {{ page.d.inc }}/footer.html %}
+  {% include {{ page.d.inc }}/scripts.html %}
+  </body>
+</html>

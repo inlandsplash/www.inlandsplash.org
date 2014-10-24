@@ -1,5 +1,5 @@
 ---
-title: "Thank You&#33;"
+title: "Thank You!"
 permalink: /thank-you/
 ---
 

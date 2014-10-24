@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ site.longmans.lang }}">
-  <title>{{ site.noita.name }}</title>
-  <subtitle>{{ site.noita.description }}</subtitle>
+  <title>{{ site.name }}</title>
+  <subtitle>{{ site.description }}</subtitle>
 
 {% if site.url %}
   {% assign base = site.url %}
@@ -13,7 +13,7 @@
 
   <id>{{ base }}{{ page.url }}</id>
   <author>
-    <name>{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.name }}</name>
+    <name>{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.name }}{% endif %}</name>
     <uri>{{ base }}{{ site.baseurl }}</uri>
   </author>
   <link

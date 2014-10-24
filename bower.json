@@ -9,6 +9,7 @@
   "dependencies": {
     "foundation": ">=5.1.0",
     "FitText.js": "*",
-    "normalize-scss": "~3.0.1"
+    "normalize-scss": "~3.0.1",
+    "foundation-icons": "*"
   }
 }
