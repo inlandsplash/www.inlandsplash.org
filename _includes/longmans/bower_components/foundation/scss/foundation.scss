@@ -1,270 +1,45 @@
 @charset "UTF-8";
-/* Foundation by ZURB
- * foundation.zurb.com
- * Licensed under MIT Open Source
- * Foundation.scss
- * Import successful 
- */
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
 
 // Make sure the charset is set appropriately
 
 // Behold, here are all the Foundation components.
-/* trace 3.01.begin
- * @import "foundation/components/grid";
- */
   @import "foundation/components/grid";
-/* trace 3.01.end
- * @import "foundation/components/grid";
- */
-/* trace 3.02.begin
- * @import "foundation/components/accordion";
- */
   @import "foundation/components/accordion";
-/* trace 3.02.end
- * @import "foundation/components/accordion";
- */
-/* trace 3.03.begin
- * @import "foundation/components/alert-boxes";
- */
   @import "foundation/components/alert-boxes";
-/* trace 3.03.end
- * @import "foundation/components/alert-boxes";
- */
-/* trace 3.04.begin
- * @import "foundation/components/block-grid";
- */
   @import "foundation/components/block-grid";
-/* trace 3.04.end
- * @import "foundation/components/block-grid";
- */
-/* trace 3.05.begin
- * @import "foundation/components/breadcrumbs";
- */
   @import "foundation/components/breadcrumbs";
-/* trace 3.05.end
- * @import "foundation/components/breadcrumbs";
- */
-/* trace 3.06.begin
- * @import "foundation/components/button-groups";
- */
   @import "foundation/components/button-groups";
-/* trace 3.06.end
- * @import "foundation/components/button-groups";
- */
-/* trace 3.07.begin
- * @import "foundation/components/buttons";
- */
   @import "foundation/components/buttons";
-/* trace 3.07.end
- * @import "foundation/components/buttons";
- */
-/* trace 3.08.begin
- * @import "foundation/components/clearing";
- */
   @import "foundation/components/clearing";
-/* trace 3.08.end
- * @import "foundation/components/clearing";
- */
-/* trace 3.09.begin
- * @import "foundation/components/dropdown";
- */
   @import "foundation/components/dropdown";
-/* trace 3.09.end
- * @import "foundation/components/dropdown";
- */
-/* trace 3.10.begin
- * @import "foundation/components/dropdown-buttons";
- */
   @import "foundation/components/dropdown-buttons";
-/* trace 3.10.end
- * @import "foundation/components/dropdown-buttons";
- */
-/* trace 3.11.begin
- * @import "foundation/components/flex-video";
- */
   @import "foundation/components/flex-video";
-/* trace 3.11.end
- * @import "foundation/components/flex-video";
- */
-/* trace 3.12.begin
- * @import "foundation/components/forms";
- */
   @import "foundation/components/forms";
-/* trace 3.12.end
- * @import "foundation/components/forms";
- */
-/* trace 3.13.begin
- * @import "foundation/components/icon-bar";
- */
   @import "foundation/components/icon-bar";
-/* trace 3.13.end
- * @import "foundation/components/icon-bar";
- */
-/* trace 3.14.begin
- * @import "foundation/components/inline-lists";
- */
   @import "foundation/components/inline-lists";
-/* trace 3.14.end
- * @import "foundation/components/inline-lists";
- */
-/* trace 3.15.begin
- * @import "foundation/components/joyride";
- */
   @import "foundation/components/joyride";
-/* trace 3.15.end
- * @import "foundation/components/joyride";
- */
-/* trace 3.16.begin
- * @import "foundation/components/keystrokes";
- */
   @import "foundation/components/keystrokes";
-/* trace 3.16.end
- * @import "foundation/components/keystrokes";
- */
-/* trace 3.17.begin
- * @import "foundation/components/labels";
- */
   @import "foundation/components/labels";
-/* trace 3.17.end
- * @import "foundation/components/labels";
- */
-/* trace 3.18.begin
- * @import "foundation/components/magellan";
- */
   @import "foundation/components/magellan";
-/* trace 3.18.end
- * @import "foundation/components/magellan";
- */
-/* trace 3.19.begin
- * @import "foundation/components/orbit";
- */
   @import "foundation/components/orbit";
-/* trace 3.19.end
- * @import "foundation/components/orbit";
- */
-/* trace 3.20.begin
- * @import "foundation/components/pagination";
- */
   @import "foundation/components/pagination";
-/* trace 3.20.end
- * @import "foundation/components/pagination";
- */
-/* trace 3.21.begin
- * @import "foundation/components/panels";
- */
   @import "foundation/components/panels";
-/* trace 3.21.end
- * @import "foundation/components/panels";
- */
-/* trace 3.22.begin
- * @import "foundation/components/pricing-tables";
- */
   @import "foundation/components/pricing-tables";
-/* trace 3.22.end
- * @import "foundation/components/pricing-tables";
- */
-/* trace 3.23.begin
- * @import "foundation/components/progress-bars";
- */
   @import "foundation/components/progress-bars";
-/* trace 3.23.end
- * @import "foundation/components/progress-bars";
- */
-/* trace 3.24.begin
- * @import "foundation/components/range-slider";
- */
   @import "foundation/components/range-slider";
-/* trace 3.24.end
- * @import "foundation/components/range-slider";
- */
-/* trace 3.25.begin
- * @import "foundation/components/reveal";
- */
   @import "foundation/components/reveal";
-/* trace 3.25.end
- * @import "foundation/components/reveal";
- */
-/* trace 3.26.begin
- * @import "foundation/components/side-nav";
- */
   @import "foundation/components/side-nav";
-/* trace 3.26.end
- * @import "foundation/components/side-nav";
- */
-/* trace 3.27.begin
- * @import "foundation/components/split-buttons";
- */
   @import "foundation/components/split-buttons";
-/* trace 3.27.end
- * @import "foundation/components/split-buttons";
- */
-/* trace 3.28.begin
- * @import "foundation/components/sub-nav";
- */
   @import "foundation/components/sub-nav";
-/* trace 3.28.end
- * @import "foundation/components/sub-nav";
- */
-/* trace 3.29.begin
- * @import "foundation/components/switches";
- */
   @import "foundation/components/switches";
-/* trace 3.29.end
- * @import "foundation/components/switches";
- */
-/* trace 3.30.begin
- * @import "foundation/components/tables";
- */
   @import "foundation/components/tables";
-/* trace 3.30.end
- * @import "foundation/components/tables";
- */
-/* trace 3.31.begin
- * @import "foundation/components/tabs";
- */
   @import "foundation/components/tabs";
-/* trace 3.31.end
- * @import "foundation/components/tabs";
- */
-/* trace 3.32.begin
- * @import "foundation/components/thumbs";
- */
   @import "foundation/components/thumbs";
-/* trace 3.32.end
- * @import "foundation/components/thumbs";
- */
-/* trace 3.33.begin
- * @import "foundation/components/tooltips";
- */
   @import "foundation/components/tooltips";
-/* trace 3.33.end
- * @import "foundation/components/tooltips";
- */
-/* trace 3.34.begin
- * @import "foundation/components/top-bar";
- */
   @import "foundation/components/top-bar";
-/* trace 3.34.end
- * @import "foundation/components/top-bar";
- */
-/* trace 3.35.begin
- * @import "foundation/components/type";
- */
   @import "foundation/components/type";
-/* trace 3.35.end
- * @import "foundation/components/type";
- */
-/* trace 3.36.begin
- * @import "foundation/components/offcanvas";
- */
   @import "foundation/components/offcanvas";
-/* trace 3.36.end
- * @import "foundation/components/offcanvas";
- */
-/* trace 3.37.begin
- * @import "foundation/components/visibility";
- */
   @import "foundation/components/visibility";
-/* trace 3.37.end
- * @import "foundation/components/visibility";
- */

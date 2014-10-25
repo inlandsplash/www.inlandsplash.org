@@ -7,9 +7,9 @@
   "description": "Jekyll theme built with Zurb Foundation 5 for Github Pages",
   "private": true,
   "dependencies": {
-    "foundation": ">=5.1.0",
     "FitText.js": "*",
-    "normalize-scss": "~3.0.1",
-    "foundation-icons": "*"
+    "foundation": "5.4.5",
+    "foundation-icons": "*",
+    "normalize-scss": "~3.0.1"
   }
 }

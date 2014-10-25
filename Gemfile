@@ -6,6 +6,7 @@ require 'open-uri'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 gem 'github-pages', versions['github-pages']
+gem 'sass', "~>3.3.0"
 
 group :test do
   gem 'kramdown'
