@@ -3,5 +3,6 @@
 ## Contact Us!
 
 {% include {{ page.d.inc }}/contact-form.html %}
+{% include {{ page.d.inc }}/contact-info.md %}
 
 </div>
