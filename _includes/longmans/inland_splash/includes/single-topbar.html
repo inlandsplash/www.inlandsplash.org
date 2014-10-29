@@ -17,8 +17,7 @@
         <ul class="left">
         {% for item in page.topbar.left %}
           <li class="divider"><li>
-          {% assign active = item.url | downcase | append: 'index.html' %}
-          <li class="{% if active == page.url %}active{% endif %}{% if item.class %} has-form{% endif %}">
+          <li class="uppercase{% if item.url == page.url %} active{% endif %}{% if item.class %} has-form{% endif %}">
             <a href="{{ site.url }}{{ site.baseurl }}/{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
           </li>
         {% endfor %}
@@ -30,8 +29,7 @@
         <ul class="right">
         {% for item in page.topbar.right %}
           <li class="divider"><li>
-          {% assign active = item.url | downcase | append: 'index.html' %}
-          <li class="{% if active == page.url %}active{% endif %}{% if item.class %} has-form{% endif %}">
+          <li class="uppercase{% if item.url == page.url %} active{% endif %}{% if item.class %} has-form{% endif %}">
             <a href="{{ site.url }}{{ site.baseurl }}/{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
           </li>
         {% endfor %}

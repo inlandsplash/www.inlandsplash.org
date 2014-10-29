@@ -5,10 +5,12 @@
 {% endif %}
 
 <div class="small-12 large-6 column">
-  <div class="row">
-  {% include_relative {{ partial }}_banner.md %}
-  {% include_relative {{ partial }}_addresses.md %}
-  </div>
+<div class="row">
+<div class="small-4 column our-pools-banner" data-equalizer-watch>
+<h2>Our Pools</h2>
+</div>
+{% include_relative {{ partial }}_addresses.md %}
+</div>
 </div>
 <div class="small-12 large-6 column" data-equalizer-watch>
   {% include_relative {{ partial }}_graphic.md %}

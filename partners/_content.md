@@ -1,11 +1,13 @@
 ### Partners  
 
+<ul markdown="0" class="gallery small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 {% for partner in site.data.galleries.partners %}
-- ![{{ partner.name }}]({{ site.url }}{{ site.baseurl }}{{ page.d.img }}/partners{{ partner.file }} "{{ partner.alt }}")
-{: .gallery .image}
-{{ partner.name }}
-{: .gallery .title}
-{{ partner.caption }}
-{: .gallery .caption}
+{% capture dir %}{{ site.url }}{{ site.baseurl }}{{ page.d.img }}/partners{% endcapture %}
+<li>
+{% if partner.caption %}
+<p>{{ partner.caption }}</p>
+{% endif %}
+<a target="_blank" href="{{ dir }}{{ partner.link }}"><img src="{{ dir }}{{ partner.file }}" alt="{{ dir }}{{ partner.alt }}"></a>
+</li>
 {% endfor %}
-{: .small-block-grid-2 .medium-block-grid-4 .large-block-grid-6}
+</ul>

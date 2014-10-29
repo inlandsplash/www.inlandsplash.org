@@ -1,10 +1,10 @@
 ---
-layout: single-page
+layout: flush
 ---
 
 {% capture slug %}{{ page.title | slugify }}{% endcapture %}
 <section id="{{ slug }}" class="row {{ slug }}" data-equalizer>
-  <div class="small-12 columns">
+  <div class="single-page-content">
     {{ content }}
   </div>
 </section>

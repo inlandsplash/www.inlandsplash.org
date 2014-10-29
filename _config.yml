@@ -1,6 +1,5 @@
 safe: true
 # url: http://www.inlandsplash.com
-# baseurl: /staging
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
@@ -22,7 +21,7 @@ theme: &inland_splash
     company: "RootAndFlow.com"
     url: "http://www.rootandflow.com"
   lang: en
-  fonts: "Open+Sans%3A300%2C400%2C600%2C700%7CLora%3A400%2C700%7CDroid+Sans+Mono%7COswald%3A400%2C700%7CMontserrat%3A400%2C700"
+  fonts: "http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CLora%3A400%2C700%7CDroid+Sans+Mono%7COswald%3A400%2C700%7CMontserrat%3A400%2C700"
   generator: "Built for Jekyll and published on Github Pages."
   # Theme directory is located within longmans root under _includes 
   dir: &longmans_d #Anchor for Jekyll asset mapping, referenced below in Front Matter defaults
@@ -90,7 +89,7 @@ defaults:
         toggle: Menu
         left:
           - name: "Aquettes"
-            url: '#aquettes'
+            url: '#riverside-aquettes'
           - name: "Aqua Motion" 
             url: '#aqua-motion'
           - name: "About Us" 

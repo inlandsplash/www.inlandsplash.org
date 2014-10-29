@@ -7,12 +7,11 @@ categories:
 robots: none
 ---
 
+<ul markdown="0" class="clearing-thumbs small-block-grid-2 medium-block-grid-3 large-block-grid-4" data-clearing>
 {% for photo in site.data.galleries.photos %}
-- ![photo]({{ site.url }}{{ site.baseurl }}{{ page.d.img }}/photos{{ photo.file }} "Riverside Synchronized Swimming Team phot")
-{: .gallery .image .photo}
-{% if photo.caption %}
-{{ photo.caption }}
-{: .gallery .caption .photo}
-{% endif %}
+{% capture pic %}{{ site.url }}{{ site.baseurl }}{{ page.d.img }}/photos{{ photo.file }}{% endcapture %}
+<li>
+<a class="th" href="{{ pic }}"><img {% if photo.caption %}data-caption="{{ photo.caption }}"{% endif %} src="{{ pic }}"></a>
+</li>
 {% endfor %}
-{: .small-block-grid-2 .medium-block-grid-4 .large-block-grid-6}
+</ul>
