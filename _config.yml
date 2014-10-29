@@ -1,5 +1,5 @@
 safe: true
-url: http://www.inlandsplash.org
+url: http://staging.inlandsplash.org
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
