@@ -12,3 +12,9 @@ We do lots of variety with steady state cardio, intervals, pyramids, and circuit
 The best part is, we have fun.  We play hard, but have plenty of time to meet people and enjoy each other's company. We have quarterly luncheons for extra time together.  
 
 Come have fun and get a great workout.  The pool is heated. There is a shallow end if you would like to keep your feet closer to the ground. It helps if you are comfortable in the water, but swimming ability is not necessary. A lift is available.  
+
+![Senior Swimming][lap]
+![Water Aerobic Swim Class][swimmers]
+
+[lap]: https://raw.githubusercontent.com/inlandsplash/content.inlandsplash.org/gh-pages/photos/water-aerobics-element-051.jpg
+[swimmers]: https://raw.githubusercontent.com/inlandsplash/content.inlandsplash.org/gh-pages/photos/water-aerobics-element-060.jpg
