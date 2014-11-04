@@ -96,7 +96,7 @@ defaults:
             url: '#about-us'
         right:
           - name: "Map"
-            url: '#location'
+            url: '#our-pools'
           - name: "Calendar"
             url: '#calendar'
           - name: "News &#038; Events"
