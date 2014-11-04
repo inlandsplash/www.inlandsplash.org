@@ -1,7 +1,8 @@
 _site/
-Gemfile.lock
+.bundle
 .sass-cache
 CNAME
-.ruby-version
 .DS_Store
 *.swp
+vendor/ruby
+node_modules
