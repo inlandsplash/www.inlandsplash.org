@@ -56,6 +56,8 @@ longmans: *inland_splash
 
 # Site Info
 name: InlandSplash.org
+analytics:
+  # google: "UA-56655930-1"
 description: &site_desc "Swimming Fun for the Whole Family!"
 vcard:
   email: 
