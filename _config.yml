@@ -59,17 +59,6 @@ name: InlandSplash.org
 analytics:
   # google: "UA-56655930-1"
 description: &site_desc "Swimming Fun for the Whole Family!"
-keywords: &site_keywords
-  - "swimming"
-  - "youth"
-  - "sports"
-  - "synchronized"
-  - "seniors"
-  - "aerobics"
-  - "fitness"
-  - "Riverside"
-  - "competition"
-  - "sports"
 vcard:
   email: 
     address: "contact@inlandsplash.org"
@@ -95,7 +84,6 @@ defaults:
     values: &values_all 
       layout: "page"
       description: *site_desc
-      keywords: *site_keywords
       og: # Facebook Opengraph default tags
         image: "/opengraph/inland-splash-logo.png"
         type: "website"
