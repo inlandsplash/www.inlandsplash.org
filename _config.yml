@@ -1,5 +1,5 @@
 safe: true
-url: http://staging.inlandsplash.org
+url: http://www.inlandsplash.org
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
@@ -49,15 +49,15 @@ theme: &inland_splash
 layouts: *longmans_lay
 sass: 
   sass_dir: _includes/longmans/bower_components/foundation/scss
-  style: :nested # for dev
-# style: :compressed # for prod
+ #  style: :nested # for dev
+  style: :compressed # for prod
 ## Longmans specific
 longmans: *inland_splash
 
 # Site Info
 name: InlandSplash.org
 analytics:
-  # google: "UA-56655930-1"
+  google: "UA-56655930-1"
 description: &site_desc "Swimming Fun for the Whole Family!"
 vcard:
   email: 
