@@ -1,0 +1,10 @@
+---
+layout: flush
+---
+<div id="{{ page.title | slugify }}" class="row main-content">
+  <div class="small-12 columns">
+    <h2>{{ page.title }}</h2>
+    <h4 class="subtitle">Posted: {{ page.date | date_to_long_string }}</h4>
+    {{ content }}
+  </div>
+</div>

@@ -1,0 +1,29 @@
+---
+layout: flush
+title: "Home"
+subtitle: "Youth Synchronized Swimming and Senior Water Aerobics Classes"
+description: "Swimming Fun in Riverside, CA (951) 900-3058"
+pins:
+  - "Welcome"
+  - "Riverside Aquettes"
+  - "Aqua Motion"
+  - "About Us"
+  - "Our Pools"
+  - "Contact Us"
+  - "Calendar"
+  - "News & Events"
+  - "Resources"
+  - "Partners"
+  - "Photo Galleries"
+---
+
+{% for pin in page.pins %}
+{% capture slug %}{{ pin | slugify }}{% endcapture %}
+<section id="{{ slug }}" class="row {{ slug }}" data-equalizer>
+{% capture md %}
+{% include_relative {{ slug }}/_content.md %}
+{% endcapture %}
+{{ md | markdownify }}
+</section>
+<hr>
+{% endfor %}

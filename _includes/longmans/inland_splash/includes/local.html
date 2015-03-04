@@ -1,0 +1,4 @@
+{% capture mark %}
+{% include_relative _content.md %}
+{% endcapture %}
+{{ mark | markdownify }}

@@ -1,0 +1,15 @@
+{
+  "name": "InlandSplash.org",
+  "version": "1.0.5",
+  "authors": [
+    "Remy Schrader <remy@rootandflow.com>"
+  ],
+  "description": "Jekyll theme built with Zurb Foundation 5 for Github Pages",
+  "private": true,
+  "dependencies": {
+    "FitText.js": "*",
+    "foundation": "5.4.5",
+    "foundation-icons": "*",
+    "normalize-scss": "~3.0.1"
+  }
+}

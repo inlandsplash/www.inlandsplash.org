@@ -1,0 +1,18 @@
+pools:
+  - name: "Riverside Aquatic Complex"
+    facility: "Riverside City College"
+    street-address: "4800 Magnolia Avenue"
+    locality: "Riverside"
+    state: "CA"
+    zip: "92506"
+  - name: "Sippy Woodhead Pool"
+    street-address: "2060 University Avenue"
+    locality: "Riverside"
+    state: "CA"
+    zip: "92507"
+  - name: "Shamel Park Pool"
+    street-address: "3650 Arlington Avenue"
+    locality: "Riverside"
+    state: "CA"
+    zip: "92506"
+

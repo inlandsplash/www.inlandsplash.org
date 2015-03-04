@@ -1,0 +1,24 @@
+---
+# layout: compress
+---
+<!doctype html>
+<html dir="ltr" lang="{{ site.longmans.lang }}">
+  {% include {{ page.d.inc }}/head.html %}
+  <body>
+  {% include {{ page.d.inc }}/header.html %}
+  {% if page.pins %}
+  {% include {{ page.d.inc }}/front-topbar.html %}
+  {% else %}
+  {% include {{ page.d.inc }}/single-topbar.html %}
+  {% endif %}
+    <div class="row">
+      <div class="small-12 column main">
+        <!-- Nav Anchor for Top-bar Home link -->
+        <div id="top-nav-landing"></div>
+        {{ content }}
+      </div>
+    </div>
+  {% include {{ page.d.inc }}/footer.html %}
+  {% include {{ page.d.inc }}/scripts.html %}
+  </body>
+</html>
